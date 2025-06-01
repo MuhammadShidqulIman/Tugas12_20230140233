@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Form Peminatan</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Pendaftaran Peminatan</h3>
+    </div>
+
+    <form action="#">
+      <label for="nama">Nama</label>
+      <input type="text" placeholder="Nama anda" id="nama" />
+
+      <label for="nim">NIM</label>
+      <input type="text" placeholder="NIM anda" id="nim" />
+
+      <p>Peminatan pada bidang:</p>
+      <input type="radio" name="peminatan" id="programming" value="Programming" />
+      <label for="programming">Programming</label><br />
+      <input type="radio" name="peminatan" id="desain" value="Desain" />
+      <label for="desain">Desain</label><br />
+      <input type="radio" name="peminatan" id="jaringan" value="Jaringan" />
+      <label for="jaringan">Jaringan</label><br />
+      <input type="radio" name="peminatan" id="data" value="Data" />
+      <label for="data">Data</label><br />
+
+      <label for="alamat">Alamat</label>
+      <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="4"></textarea>
+
+      <label for="kelas">Kelas</label>
+      <select id="kelas">
+        <option value="A">Kelas A</option>
+        <option value="B">Kelas B</option>
+        <option value="C">Kelas C</option>
+        <option value="D">Kelas D</option>
+        <option value="E">Kelas E</option>
+      </select>
+
+      <label for="tanggal">Tanggal </label>
+      <input type="date" id="tanggal" />
+
+      <button type="button" onclick="kirimData()">Kirim</button>
+    </form>
+   <div id="custom-alert" class="custom-alert" style="display: none;">
+  <div class="marquee" id="alert-content"></div>
+  <button id="close-alert" style="
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  ">&times;</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
